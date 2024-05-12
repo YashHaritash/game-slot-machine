@@ -16,6 +16,11 @@ let btn = document.getElementById('btn');
 let intervalId;
 
 let flag = true;
+intervalId = setInterval(() => {
+    value1.innerText = getRandomValue();
+    value2.innerText = getRandomValue();
+    value3.innerText = getRandomValue();
+}, 100);
 btn.onclick = function() {
     flag = !flag;
     if (flag) {
